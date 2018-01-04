@@ -1,0 +1,20 @@
+Project Title: Maybe not Ultimate Skyrim Guide
+Team Members: Dani Coles, Earl Clarin
+Project Description: 
+	- Our goal is to educate end-users or (not!) all things Skyrim, and even a few fun things!
+	- Our content will include maps with regional content, beastiary, NPC Shop List, Races/Class information, Alchemy, "Shout" List
+Sketch of Final Project:
+	Structure of page:
+		- Intro to what the page is about
+		- Character Selection Options
+		- Game Map Content
+		- TBD: FAQ List/Shopping List/Skyrim Hangman
+APIs to be Used
+	- Face ++
+	- Giphy
+	- Reddit
+	- Wikipedia
+Rough Breakdown of Tasks
+	- Dani = 45% of description above
+	- Earl = 45% of description above
+	- TA/Zack assistance = 10-15%... TBD

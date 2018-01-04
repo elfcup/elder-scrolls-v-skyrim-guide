@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skyrim Information Page</title>
+    <!-- <link rel="stylesheet" type="text/css" href="reset.css">-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <!--jQuery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-3">Skyrim Information Guide</h1>
+        <p class="lead">This is where we can put a brief description.</p>
+        <hr class="my-4">
+
+    <div class="row">
+         <div class="col-md-8">
+           <p>Hello Skyrim Fans!</p>
+           <p>This page is dedicated to new Skyrim gamers. Below, you will find helpful topics such as:</p>
+           <p> -- INSERT CONTENT HERE -- </p>
+           <p> -- INSERT CONTENT HERE -- </p>
+           <p> -- INSERT CONTENT HERE -- </p>
+           <p> -- INSERT CONTENT HERE -- </p>
+           <p> -- INSERT CONTENT HERE -- </p>
+        </div>
+
+        <div class="col-md-4">
+               <img src="skyrim3.jpg" alt="Skyrim image" width="450" height="300">
+           </div>
+       </div>
+
+        <p>This section will contain a cool pic of some scenery from skyrim, and an intro about the game and the things that can be done on our page</p>
+        <hr class="my-4">
+        <form>
+    <div class="form-group">
+      <!-- <label for="sel1">Character race (select one):</label> -->
+      <select class="form-control" id="sel1">
+        <option>Character race (select one):
+        <option id="1a">Bosmer (Elf)</option>
+        <option id="1b">Nord (Large Human)</option>
+        <option id="1c">Orsimer (Orc)</option>
+        <!-- <option>4</option> -->
+      </select>
+      <!-- <label for="sel1">Character class (select one):</label> -->
+      <select class="form-control" id="sel2">
+        <option>Character class (select one):</option>
+        <option id="2a">Warrior</option>
+        <optionid id="2b">Mage</option>
+        <option id="2c">Thief/Rogue</option>
+        <!-- <option>4</option> -->
+      </select>
+      <!-- <label for="sel1">Character Sex (select one):</label> -->
+      <select class="form-control" id="sel3">
+        <option>Character gender (select one):
+        <option id="3a">Male</option>
+        <option id="3b">Female</option>        
+      </select>
+      <a class="btn btn-primary btn-sm" href="#" role="button" id="submitBtn">Submit</a>
+      <br>
+
+
+      <div class="row">
+        <div class="col-md-8">
+      <table class="table">
+            <thead id="characterBox">
+                <tr>
+                    <th>Character Race</th>
+                    <th>Character Class</th>
+                    <th>Character Gender</th>
+                    <!-- <th>Next Arrival</th>
+                    <th>Minutes Away</th> -->
+                </tr>
+                
+            </thead>
+            <tbody id="characterUserInput">
+                <!--  <tr>
+                <td></td>
+            </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4" id="characterUserOutput">
+    </div>
+    </div> <!-- close the row -->
+  </form>
+        <p>
+        </p>
+        <hr class="my-4">
+        <p>This section will contain the skyrim map, and links to different regions that are embedded URL's that the user can click on that will bring them to wikipedia or somewhere with data about the region. Possible more info here</p>
+        <hr class="my-4">
+        <p>This is if we are even extra awesome and are able to do a 4th section. Otherwise this will be deleted. </p>
+        <p class="lead">
+        </p>
+    </div>
+    <!--firebase link-->
+    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+    <script type="text/javascript" src="javascript.js"></script>
+    <!--moment.js link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.4/moment.min.js"></script>
+</body>
+
+</html>
