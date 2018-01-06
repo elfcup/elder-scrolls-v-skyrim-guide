@@ -12,18 +12,17 @@
 
 <body>
     <div class="jumbotron">
-        <h1 class="display-3">Skyrim Information Guide</h1>
-        <p class="lead">This is where we can put a brief description.</p>
+        <h1 class="display-3">Elder Scrolls V: Skyrim</h1>
+        <p class="lead">Beginners Information Guide</p>
         <hr class="my-4">
 
     <div class="row">
          <div class="col-md-8">
            <p>Hello Skyrim Fans!</p>
            <p>This page is dedicated to new Skyrim gamers. Below, you will find helpful topics such as:</p>
-           <p> -- INSERT CONTENT HERE -- </p>
-           <p> -- INSERT CONTENT HERE -- </p>
-           <p> -- INSERT CONTENT HERE -- </p>
-           <p> -- INSERT CONTENT HERE -- </p>
+           <p> -Character race and class </p>
+           <p> -Key word info search </p>
+           <p> -Key word video search </p>
            <p> -- INSERT CONTENT HERE -- </p>
         </div>
 
@@ -48,8 +47,8 @@
       <select class="form-control" id="sel2">
         <option>Character class (select one):</option>
         <option id="2a">Warrior</option>
-        <optionid id="2b">Mage</option>
-        <option id="2c">Thief/Rogue</option>
+        <option id="2b">Thief/Rogue</option>
+        <option id="2c">Mage</option>
         <!-- <option>4</option> -->
       </select>
       <!-- <label for="sel1">Character Sex (select one):</label> -->
@@ -89,9 +88,21 @@
         <p>
         </p>
         <hr class="my-4">
-        <p>This section will contain the skyrim map, and links to different regions that are embedded URL's that the user can click on that will bring them to wikipedia or somewhere with data about the region. Possible more info here</p>
+        <div>
+      
+        <form id="skyrim-form">
+      <label for="skyrim-input">Search for a Skyrim related item</label>
+      <input type="text" id="skyrim-input"><br>
+
+      <!-- This button will trigger our AJAX call -->
+      <input id="find-skyrimItem" type="submit" value="Skyrim Search">
+    </form>
+    <div id="wikiaAPI">
+      </div>
+        
+      </div>
         <hr class="my-4">
-        <p>This is if we are even extra awesome and are able to do a 4th section. Otherwise this will be deleted. </p>
+        <p>This section will contain the skyrim map, and links to different regions that are embedded URL's that the user can click on that will bring them to wikipedia or somewhere with data about the region. Possible more info here</p>
         <p class="lead">
         </p>
     </div>
