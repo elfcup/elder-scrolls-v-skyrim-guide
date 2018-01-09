@@ -74,11 +74,11 @@ $(document).ready(function() {
     });
 });
 
-$.ajaxPrefilter(function(options) {
-    if (options.crossDomain && $.support.cors) {
-        options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-    }
-});
+// $.ajaxPrefilter(function(options) {
+//     if (options.crossDomain && $.support.cors) {
+//         options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
+//     }
+// });
 
 $("#find-skyrimItem").on("click", function(event) {
     // Preventing the submit button from trying to submit the form
@@ -90,13 +90,14 @@ $("#find-skyrimItem").on("click", function(event) {
     var queryURL = "http://elderscrolls.wikia.com/api/v1/Search/List?query=" + searchItem + "&limit=5&minArticleQuality=10&batch=1&namespaces=0%2C14"
 
     $.ajax({
-        url: queryURL,
+        url: 'https://cors-anywhere.herokuapp.com/' + queryURL,
         method: "GET"
+
     }).done(function(response) {
         // TODO clear out the #wikiaApi
         console.log(response);
         var resultsDiv = $('<div>');
-        for (var i = 0; i < 5; i++) {
+        for (var i = 0; i < response.items.length; i++) {
             var result = response.items[i];
             var htmlSnippet = result.snippet;
             var url = result.url;
@@ -107,14 +108,25 @@ $("#find-skyrimItem").on("click", function(event) {
 
         $('#wikiaAPI').html(resultsDiv);
 
-        // console.log(response.items[0].snippet);
-        // var results = response.items[0];
-        // var results2 = results.snippet;
-        // var resultsURL = results.url;
-        // console.log(resultsURL);
-        // var link = $("<a>").attr("href", resultsURL).text(resultsURL)
-        // $("#wikiaAPI").html(results2).append(link);
-        // // $("#wikiaAPI").append(results2);
+    });
+    var apiKey = "789cdd67c22ff2b99b54f20df8bfded4"
+    var queryFlickrURL = "http://api.flickr.com/services/rest/?&method=flickr.photos.search&text=skyrim%20" + searchItem + "&api_key=" + apiKey + "&per_page=5&format=json&nojsoncallback=?"
+
+    $.ajax({
+        url: queryFlickrURL,
+        method: "GET"
+    }).done(function(response) {
+        console.log(response);
+        $("#flickrAPI").empty();
+
+        var photos = response.photos.photo;
+
+        for (var i = 0; i < photos.length; i++) {
+            var photo = photos[i];
+            var imgSrc = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`
+
+            $('<img>').attr('src', imgSrc).appendTo("#flickrAPI");
+        }
 
     });
 });

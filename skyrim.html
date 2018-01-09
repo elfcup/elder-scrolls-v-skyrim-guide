@@ -15,102 +15,150 @@
         <h1 class="display-3">Elder Scrolls V: Skyrim</h1>
         <p class="lead">Beginners Information Guide</p>
         <hr class="my-4">
-
-    <div class="row">
-         <div class="col-md-8">
-           <p>Hello Skyrim Fans!</p>
-           <p>This page is dedicated to new Skyrim gamers. Below, you will find helpful topics such as:</p>
-           <p> -Character race and class </p>
-           <p> -Key word info search </p>
-           <p> -Key word video search </p>
-           <p> -- INSERT CONTENT HERE -- </p>
+        <div class="row">
+            <div class="col-md-8">
+                <p>Hello Skyrim Fans!</p>
+                <p>This page is dedicated to new Skyrim gamers. Below, you will find helpful topics such as:</p>
+                <p> -Character race and class </p>
+                <p> -Key word info search </p>
+                <p> -Key word video search </p>
+                <p> -- INSERT CONTENT HERE -- </p>
+            </div>
+            <div class="col-md-4">
+                <img src="skyrim3.jpg" alt="Skyrim image" width="450" height="300">
+            </div>
         </div>
-
-        <div class="col-md-4">
-               <img src="skyrim3.jpg" alt="Skyrim image" width="450" height="300">
-           </div>
-       </div>
-
         <p>This section will contain a cool pic of some scenery from skyrim, and an intro about the game and the things that can be done on our page</p>
         <hr class="my-4">
         <form>
-    <div class="form-group">
-      <!-- <label for="sel1">Character race (select one):</label> -->
-      <select class="form-control" id="sel1">
-        <option>Character race (select one):
-        <option id="1a">Bosmer (Elf)</option>
-        <option id="1b">Nord (Large Human)</option>
-        <option id="1c">Orsimer (Orc)</option>
-        <!-- <option>4</option> -->
-      </select>
-      <!-- <label for="sel1">Character class (select one):</label> -->
-      <select class="form-control" id="sel2">
-        <option>Character class (select one):</option>
-        <option id="2a">Warrior</option>
-        <option id="2b">Thief/Rogue</option>
-        <option id="2c">Mage</option>
-        <!-- <option>4</option> -->
-      </select>
-      <!-- <label for="sel1">Character Sex (select one):</label> -->
-      <select class="form-control" id="sel3">
-        <option>Character gender (select one):
-        <option id="3a">Male</option>
-        <option id="3b">Female</option>        
-      </select>
-      <a class="btn btn-primary btn-sm" href="#" role="button" id="submitBtn">Submit</a>
-      <br>
-
-
-      <div class="row">
-        <div class="col-md-8">
-      <table class="table">
-            <thead id="characterBox">
-                <tr>
-                    <th>Character Race</th>
-                    <th>Character Class</th>
-                    <th>Character Gender</th>
-                    <!-- <th>Next Arrival</th>
+            <div class="form-group">
+                <!-- <label for="sel1">Character race (select one):</label> -->
+                <select class="form-control" id="sel1">
+                    <option>Character race (select one):
+                        <option id="1a">Bosmer (Elf)</option>
+                        <option id="1b">Nord (Large Human)</option>
+                        <option id="1c">Orsimer (Orc)</option>
+                        <!-- <option>4</option> -->
+                </select>
+                <!-- <label for="sel1">Character class (select one):</label> -->
+                <select class="form-control" id="sel2">
+                    <option>Character class (select one):</option>
+                    <option id="2a">Warrior</option>
+                    <option id="2b">Thief/Rogue</option>
+                    <option id="2c">Mage</option>
+                    <!-- <option>4</option> -->
+                </select>
+                <!-- <label for="sel1">Character Sex (select one):</label> -->
+                <select class="form-control" id="sel3">
+                    <option>Character gender (select one):
+                        <option id="3a">Male</option>
+                        <option id="3b">Female</option>
+                </select>
+                <a class="btn btn-primary btn-sm" href="#" role="button" id="submitBtn">Submit</a>
+                <br>
+                <div class="row">
+                    <div class="col-md-8">
+                        <table class="table">
+                            <thead id="characterBox">
+                                <tr>
+                                    <th>Character Race</th>
+                                    <th>Character Class</th>
+                                    <th>Character Gender</th>
+                                    <!-- <th>Next Arrival</th>
                     <th>Minutes Away</th> -->
-                </tr>
-                
-            </thead>
-            <tbody id="characterUserInput">
-                <!--  <tr>
+                                </tr>
+                            </thead>
+                            <tbody id="characterUserInput">
+                                <!--  <tr>
                 <td></td>
             </tr> -->
-            </tbody>
-        </table>
-    </div>
-    <div class="col-md-4" id="characterUserOutput">
-    </div>
-    </div> <!-- close the row -->
-  </form>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-md-4" id="characterUserOutput">
+                    </div>
+                </div>
+                <!-- close the row -->
+        </form>
         <p>
         </p>
         <hr class="my-4">
         <div>
-      
-        <form id="skyrim-form">
-      <label for="skyrim-input">Search for a Skyrim related item</label>
-      <input type="text" id="skyrim-input"><br>
-
-      <!-- This button will trigger our AJAX call -->
-      <input id="find-skyrimItem" type="submit" value="Skyrim Search">
-    </form>
-    <div id="wikiaAPI">
-      </div>
-        
-      </div>
-        <hr class="my-4">
-        <p>This section will contain the skyrim map, and links to different regions that are embedded URL's that the user can click on that will bring them to wikipedia or somewhere with data about the region. Possible more info here</p>
-        <p class="lead">
-        </p>
-    </div>
-    <!--firebase link-->
-    <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
-    <script type="text/javascript" src="javascript.js"></script>
-    <!--moment.js link-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.4/moment.min.js"></script>
+            <form id="skyrim-form">
+                <label for="skyrim-input">Search for a Skyrim related item</label>
+                <input type="text" id="skyrim-input">
+                <br>
+                <!-- This button will trigger our AJAX call -->
+                <input id="find-skyrimItem" type="submit" value="Skyrim Search">
+            </form>
+            <br>
+            <div class=row>
+                <div class="col-md-6">
+                    <div id="wikiaAPI">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="flickrAPI">
+                    </div>
+                </div>
+            </div>
+            <!--close row-->
+            <hr class="my-4">
+            <p>Here is a map of Skyrim. See links on the side to learn more about the various regions</p>
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="map2.jpg" alt="Skyrim map">
+                </div>
+                <div class="col-md-4">
+                    <p>
+                        <h4>Northshore</h4></p>
+                    <ul>
+                        <li><a href="https://skyrim.gamepedia.com/Northshore_Landing" target="_blank">Northshore Landing, </a><a href="https://www.youtube.com/watch?v=gr-fcWmK-Q8" target="_blank">Northshore Guide</a></li>
+                    </ul>
+                    <p>
+                        <h4>Winterhold</h4></p>
+                    <ul>
+                        <li><a href="http://elderscrolls.wikia.com/wiki/College_of_Winterhold_(Skyrim)" target="_blank">College of Winterhold, </a><a href="http://elderscrolls.wikia.com/wiki/Winterhold_(City)" target="_blank">The city of Winterhold </a></li>
+                    </ul>
+                    <p>
+                        <h4>Eastmarch</h4></p>
+                    <ul>
+                        <li><a href="http://elderscrolls.wikia.com/wiki/Eastmarch_(Skyrim)" target="_blank">Eastmarch FAQ, </a><a href="http://elderscrolls.wikia.com/wiki/Windhelm_(Skyrim)" target="_blank">The City of Kings (Windhelm)</a></li>
+                    </ul>
+                    <p>
+                        <h4>The Rift</h4></p>
+                    <ul>
+                        <li><a href="http://elderscrolls.wikia.com/wiki/The_Rift_(Skyrim)" target="_blank">The Rift FAQ, </a><a href="https://www.youtube.com/watch?v=zJm1KVtBhX4" target="_blank">The Rift region walkthrough</a></li>
+                    </ul>
+                    <p>
+                        <h4>The Pale</h4></p>
+                    <ul>
+                        <li><a href="http://elderscrolls.wikia.com/wiki/Category:Skyrim:_The_Pale_Locations" target="_blank">The Pale locations, </a><a href="http://en.uesp.net/wiki/Skyrim:Heljarchen_Hall" target="_blank">Heljarchen Hall</a></li>
+                    </ul>
+                    <p>
+                        <h4>Falkreath</h4></p>
+                    <ul>
+                        <li><a href="http://elderscrolls.wikia.com/wiki/Category:Skyrim:_Falkreath_Quests" target="_blank">Falkreath Quests, </a><a href="http://elderscrolls.wikia.com/wiki/Falkreath_(Skyrim)" target="_blank">Falkreath FAQ</a></li>
+                    </ul>
+                    <p>
+                        <h4>Whiterun</h4></p>
+                    <ul>
+                        <li><a href="http://en.uesp.net/wiki/Skyrim:Whiterun" target="_blank">Whiterun FAQ, </a><a href="http://elderscrolls.wikia.com/wiki/Whiterun_Hold">Whiterun Hold</a></li>
+                    </ul>
+                    <p>
+                        <h4>The Reach</h4></p>
+                    <ul>
+                        <li><a href="http://en.uesp.net/wiki/Skyrim:The_Reach" target="_blank">The Reach FAQ, </a><a href="http://elderscrolls.wikia.com/wiki/Markarth" target="_blank">The city of Markarth</a></li>
+                    </ul>
+                </div>
+                <p class="lead">
+                </p>
+            </div>
+            <!--firebase link-->
+            <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
+            <script type="text/javascript" src="javascript.js"></script>
+            <!--moment.js link-->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.4/moment.min.js"></script>
 </body>
 
 </html>
