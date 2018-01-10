@@ -6,10 +6,23 @@ p{
  color: #ffffcc ;*/
 }
 
-.col-md-8 {
-	background-color: lightblue;
+/*img {
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+   
+    
+}*/
+
+div#flickrAPI>img{
+	border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;       
 }
 
-.col-md-4 {
-	background-color: lightpink;
+footer {
+	text-align: center;
+	font-size: 12px;
+	color: darkblue;
+	
 }
