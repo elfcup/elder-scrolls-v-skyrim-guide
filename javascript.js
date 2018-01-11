@@ -87,7 +87,7 @@ $("#find-skyrimItem").on("click", function(event) {
     // Here we grab the text from the input box
     var searchItem = $("#skyrim-input").val();
     // var searchItem = "dragons+(skyrim)";
-    var queryURL = "http://elderscrolls.wikia.com/api/v1/Search/List?query=" + searchItem + "&limit=5&minArticleQuality=10&batch=1&namespaces=0%2C14"
+    var queryURL = "https://elderscrolls.wikia.com/api/v1/Search/List?query=" + searchItem + "&limit=5&minArticleQuality=10&batch=1&namespaces=0%2C14"
 
     $.ajax({
         url: 'https://cors-anywhere.herokuapp.com/' + queryURL,
@@ -110,7 +110,7 @@ $("#find-skyrimItem").on("click", function(event) {
 
     });
     var apiKey = "789cdd67c22ff2b99b54f20df8bfded4"
-    var queryFlickrURL = "http://api.flickr.com/services/rest/?&method=flickr.photos.search&text=skyrim%20" + searchItem + "&api_key=" + apiKey + "&per_page=6&format=json&nojsoncallback=?"
+    var queryFlickrURL = "https://api.flickr.com/services/rest/?&method=flickr.photos.search&text=skyrim%20" + searchItem + "&api_key=" + apiKey + "&per_page=6&format=json&nojsoncallback=?"
 
     $.ajax({
         url: queryFlickrURL,
